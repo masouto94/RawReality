@@ -1,6 +1,6 @@
 import React from 'react'
-import ServiceCard from '../Cards/ServiceCard'
-
+import ServiceBarCard from '../Cards/ServiceBarCard'
+import ServiceCard from '../Cards/ServiceCard';
 
 const ServiceCardContainer = () => {
     const servicios = [
@@ -21,6 +21,7 @@ const ServiceCardContainer = () => {
 
     return (
         <>
+            <ServiceBarCard servicios={servicios}/>
             <ServiceCard servicios={servicios}/>
         </>
     )
