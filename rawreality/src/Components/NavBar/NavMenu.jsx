@@ -15,9 +15,11 @@ const NavMenu = (props) =>{
         <Navbar bg="light" expand="lg">
           
         <Nav.Item>{props.children}</Nav.Item>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
         
-            <Nav className="Navbar">
+        
+            <Nav className="justify-content-end" style={{ width: "100%"}}>
+            
+            <Nav.Link as={Link} to={"/"}>{"Inicio"}</Nav.Link>
               {props.categorias.map((i) => <Nav.Link as={Link} to={`/categoria/${i}`}>{i}</Nav.Link>)
               }
 

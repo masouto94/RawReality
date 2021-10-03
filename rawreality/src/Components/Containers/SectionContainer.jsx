@@ -3,7 +3,7 @@ import React from 'react'
 const SectionContainer = ({children}) => {
     return (
         <>
-            <section>
+            <section style={{height: "100vh"}}>
             {children}
             </section>
         </>

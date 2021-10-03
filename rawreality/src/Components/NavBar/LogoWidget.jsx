@@ -1,9 +1,10 @@
 import React from 'react'
 const LogoWidget = () => {
     return (
-        <>
-         <img src={'logos/logo_circulo.jpeg'} height={'20px'} width={'20px'}/>   
-        </>
+        <div className="justify-content-start" style={{display:"flex"}}>
+         <img src={'logos/logo_circulo.jpeg'} height={"8%"} width={"10%"}/>
+         RawReality   
+        </div>
     )
 }
 
