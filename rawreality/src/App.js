@@ -9,6 +9,7 @@ import AboutUsCard from './Components/Cards/AboutUsCard';
 import ServiceCardContainer from './Components/Containers/ServiceCardContainer';
 import FooterContainer from './Components/Containers/FooterContainer';
 import ContactCard from './Components/Cards/ContactCard';
+import Portfolio from './Components/Cards/Portfolio';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
       </SectionContainer>
       <SectionContainer>
       <ServiceCardContainer/>
+      </SectionContainer>
+      <SectionContainer>
+        <Portfolio/>
       </SectionContainer>  
       <FooterContainer>
         <ContactCard/>
