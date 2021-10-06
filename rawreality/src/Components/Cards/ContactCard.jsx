@@ -5,7 +5,7 @@ const ContactCard = () => {
         <div>
             <form>
                 Aca va el formulario
-                
+                Formulario de contacto
             </form>
         </div>
     )
