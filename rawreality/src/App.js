@@ -6,10 +6,12 @@ import LogoWidget from './Components/NavBar/LogoWidget';
 import SectionContainer from './Components/Containers/SectionContainer';
 import LandingCard from './Components/Cards/LandingCard';
 import AboutUsCard from './Components/Cards/AboutUsCard';
-import ServiceCardContainer from './Components/Containers/ServiceCardContainer';
+import ServiceBarCard from './Components/Cards/ServiceBarCard';
+import ServiceCard from './Components/Cards/ServiceCard';
 import FooterContainer from './Components/Containers/FooterContainer';
 import ContactCard from './Components/Cards/ContactCard';
 import Portfolio from './Components/Cards/Portfolio';
+import {servicios} from './Components/Containers/ServiceCardContainer';
 
 function App() {
   return (
@@ -20,21 +22,27 @@ function App() {
       <LogoWidget/>
       </NavMenu>
       </header>
+
       <SectionContainer>
         <LandingCard/>
       </SectionContainer>
+
       <SectionContainer>
         <AboutUsCard/>
       </SectionContainer>
-      <SectionContainer>
-      <ServiceCardContainer/>
-      </SectionContainer>
+
+      <ServiceBarCard servicios={servicios}/>
+
+      <ServiceCard servicios={servicios}/>
+
       <SectionContainer>
         <Portfolio/>
       </SectionContainer>  
+
       <FooterContainer>
         <ContactCard/>
       </FooterContainer>
+
     </div>
     </BrowserRouter>
   );
