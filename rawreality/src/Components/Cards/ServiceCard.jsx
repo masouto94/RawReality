@@ -11,7 +11,7 @@ const ServiceCard = ({servicios}) => {
         <Card display={"grid"} margin={"12%"}>
             <div id={`tarjeta_${i.name}`} style={{display: "grid",gridTemplateColumns:"50vw 1fr"}}>
         <div style={{textAlign:"left"}}>
-        
+            {<h1>{i.name}</h1>}
             {i.content}
         </div>
         <div style={{justifyItems:"end"}}>
@@ -32,7 +32,7 @@ const ServiceCard = ({servicios}) => {
                 <img src={i.service_image} height={"100%"} width={"70%"}></img>
                 </div>
                 <div  style={{textAlign:"right"}}>
-                
+                {<h1>{i.name}</h1>}
                     {i.content}
                 </div>
                 </div>

@@ -10,8 +10,10 @@ import ServiceBarCard from './Components/Cards/ServiceBarCard';
 import ServiceCard from './Components/Cards/ServiceCard';
 import FooterContainer from './Components/Containers/FooterContainer';
 import ContactCard from './Components/Cards/ContactCard';
+import Packs from './Components/Cards/Packs';
 import Portfolio from './Components/Cards/Portfolio';
-import {servicios} from './Components/Containers/ServiceCardContainer';
+import {servicios} from './Utils/Services';
+import {packs} from './Utils/Packs'
 
 function App() {
   return (
@@ -31,9 +33,15 @@ function App() {
         <AboutUsCard/>
       </SectionContainer>
 
+    {/* No tiene container */}
       <ServiceBarCard servicios={servicios}/>
 
+    {/* Genera un container por cada card */}
       <ServiceCard servicios={servicios}/>
+
+    <SectionContainer>
+    <Packs packs={packs}/>
+    </SectionContainer>
 
       <SectionContainer>
         <Portfolio/>
