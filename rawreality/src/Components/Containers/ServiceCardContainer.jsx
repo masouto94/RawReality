@@ -5,17 +5,26 @@ import ServiceCard from '../Cards/ServiceCard';
 const ServiceCardContainer = () => {
     const servicios = [
         {name:"Marketing",
-        image:"imagen"
+        image:"/servicios/mkt_digital.svg",
+        service_image:"/imagenes_servicios/charts.svg"
         },
         {name:"Branding",
-        image:"imagen"
+        image:"/servicios/branding.svg",
+        service_image:"/imagenes_servicios/meeting_alt_1.svg"
         },
-        {name:"Sarasing",
-        image:"imagen"
+        {name:"Comunicación estratégica",
+        image:"/servicios/comunicacion_estrategica.svg",
+        service_image:"/imagenes_servicios/meeting.svg"
         },
-        {name:"Alging",
-        image:"imagen"
+        {name:"Diseño",
+        image:"/servicios/diseno.svg",
+        service_image:"/imagenes_servicios/palette.svg"
         },
+        {name:"Publicidad",
+        image:"/servicios/publicidad.svg",
+        service_image:"/imagenes_servicios/screens.svg"
+        },
+        
     ];
 
 
