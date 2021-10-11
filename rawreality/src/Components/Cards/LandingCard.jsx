@@ -1,10 +1,7 @@
 import React from 'react'
 import Card from './Card'
+import { scroller } from '../../Utils/Functions'
 
-const scroller =(id)=>{
-    let element= document.getElementById(id)
-    element.scrollIntoView()
-}
 const LandingCard = () => {
     return (
         <>

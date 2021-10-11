@@ -13,7 +13,7 @@ const Portfolio = ({portfolio}) => {
     return (
         <>
             <SectionContainer>
-        <Card display={"block"} margin={"12%"}>
+        <Card display={"block"} margin={"12%"} id={"PortfolioCarrousel"}>
         <MDBCarousel showIndicators showControls fade>
       <MDBCarouselInner>
           {portfolio.map(i=>{return (

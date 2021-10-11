@@ -4,7 +4,7 @@ import Card from './Card'
 const AboutUsCard = () => {
     return (
         <>
-        <Card display={"flex"} margin={"12%"}>
+        <Card display={"flex"} margin={"12%"} id={"AboutUsCard"}>
             <div style={{flex:"50%"}}>
                 <h2>¿Por qué elegir Rar Reality?</h2>
             <p>
