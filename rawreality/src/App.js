@@ -10,10 +10,10 @@ import ServiceBarCard from './Components/Cards/ServiceBarCard';
 import ServiceCard from './Components/Cards/ServiceCard';
 import FooterContainer from './Components/Containers/FooterContainer';
 import ContactCard from './Components/Cards/ContactCard';
-import Packs from './Components/Cards/Packs';
 import Portfolio from './Components/Cards/Portfolio';
 import {servicios} from './Utils/Services';
-import {packs} from './Utils/Packs'
+import PacksCardContainer from './Components/Containers/PacksCardContainer';
+import { portfolioImages } from './Utils/PortfolioImages';
 
 function App() {
   return (
@@ -40,12 +40,10 @@ function App() {
       <ServiceCard servicios={servicios}/>
 
     <SectionContainer>
-    <Packs packs={packs}/>
+    <PacksCardContainer/>
     </SectionContainer>
 
-      <SectionContainer>
-        <Portfolio/>
-      </SectionContainer>  
+        <Portfolio portfolio={portfolioImages}/>
 
       <FooterContainer>
         <ContactCard/>

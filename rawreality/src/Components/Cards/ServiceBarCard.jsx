@@ -7,7 +7,7 @@ const ServiceBarCard = ({servicios}) => {
         
         <Card display={"flex"} margin={"12%"}>
             {servicios.map(i =>{
-                return <div style={{backgroundColor:"black", width:"100%"}}><div style={{color:'white'}}>{i.name}</div><div><img src={i.image} alt={i.image} /></div></div>
+                return <div id="ServiceBar"style={{backgroundColor:"black", width:"100%"}}><div style={{color:'white'}}>{i.name}</div><div><img src={i.image} alt={i.image} /></div></div>
             })}
         </Card>
         
