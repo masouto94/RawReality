@@ -15,11 +15,11 @@ const Portfolio = ({portfolio}) => {
             <SectionContainer>
         <Card display={"block"} margin={"12%"} id={"PortfolioCarrousel"}>
         <MDBCarousel showIndicators showControls fade>
-      <MDBCarouselInner>
+      <MDBCarouselInner >
           {portfolio.map(i=>{return (
             <>
-            <MDBCarouselItem itemId={portfolio.indexOf(i)}>
-          <MDBCarouselElement src={i.image} alt='...' />
+            <MDBCarouselItem itemId={portfolio.indexOf(i)} >
+          <MDBCarouselElement src={i.image} alt='...' height={"100vh"}/>
           <MDBCarouselCaption>
             <h5>{i.name}</h5>
             <p>{i.description}</p>
