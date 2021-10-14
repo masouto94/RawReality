@@ -3,7 +3,7 @@ import React from 'react'
 
 export const servicios = [
     {name:"Publicidad",
-    image:"/servicios/publicidad.svg",
+    image:"/servicios/ads.svg",
     service_image:"/imagenes_servicios/screens.svg",
     content:(<>
     <ul>

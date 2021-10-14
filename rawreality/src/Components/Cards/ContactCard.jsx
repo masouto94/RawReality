@@ -6,7 +6,8 @@ const ContactCard = () => {
         <>
             <Card display={"flex"} margin={"5% 20%"}>
                 {/* INICIO CONTENIDO DEL LADO IZQUIERDO */}
-                <div className="text-start mx-5">
+
+                <div id="ContactForm" className="text-start mx-5">
                     <div className="titulo mb-5">
                         <h2>¿Listo para contactarnos?</h2>
                     </div>
