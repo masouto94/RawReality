@@ -4,14 +4,14 @@ import Card from "./Card";
 const ContactCard = () => {
     return (
         <>
-            <Card display={"flex"} margin={"0 25%"}>
+            <Card display={"flex"} margin={"5% 20%"}>
                 {/* INICIO CONTENIDO DEL LADO IZQUIERDO */}
-                <hr></hr>
-                <div id="ContactForm">
-                    <div class="titulo">
+
+                <div id="ContactForm" className="text-start mx-5">
+                    <div className="titulo mb-5">
                         <h2>¿Listo para contactarnos?</h2>
                     </div>
-                    <div className="text-start">
+                    <div>
                         <p>
                             <i></i>
                             romgromero@gmail.com
@@ -44,47 +44,51 @@ const ContactCard = () => {
 
                 {/* INICIO CONTENIDO DEL LADO DERECHO */}
                 <div>
-                    <h3>Déjanos tu mensaje.</h3>
+                    <h3 className="mb-5">Déjanos tu mensaje.</h3>
 
                     <form method="POST" id="form">
-                        <div>
+                        <div className="m-2">
                             <input
                                 type="text"
                                 name="nombre"
                                 id="name"
                                 placeholder="Nombre"
+                                className="rounded w-100"
                                 required
                             />
                         </div>
-                        <div>
+                        <div className="m-2">
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Email"
+                                className="rounded w-100"
                                 required
                             />
                         </div>
-                        <div>
+                        <div className="m-2">
                             <input
                                 type="text"
                                 name="asunto"
                                 id="asunto"
                                 placeholder="Asunto"
+                                className="rounded w-100"
                                 required
                             />
                         </div>
-                        <div>
+                        <div className="m-2">
                             <textarea
                                 rows="5"
                                 name="message"
                                 id="mensaje"
                                 placeholder="Mensaje"
+                                className="rounded bg-primary w-100"
                                 required
                             ></textarea>
                         </div>
                         <div>
-                            <button type="submit">Enviar</button>
+                            <button className="btn btn-primary rounded w-100" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
