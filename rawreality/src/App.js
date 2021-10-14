@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter,Switch, Route} from 'react-router-dom'
 import NavMenu from './Components/NavBar/NavMenu'
+import { categories } from './Utils/Categories';
 import LogoWidget from './Components/NavBar/LogoWidget';
 import SectionContainer from './Components/Containers/SectionContainer';
 import LandingCard from './Components/Cards/LandingCard';
@@ -14,13 +15,14 @@ import Portfolio from './Components/Cards/Portfolio';
 import {servicios} from './Utils/Services';
 import PacksCardContainer from './Components/Containers/PacksCardContainer';
 import { portfolioImages } from './Utils/PortfolioImages';
+import ScrollToTop from './Components/Buttons/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
       <header>
-      <NavMenu categorias={["Servicios","Nosotros", "Contacto"]}>
+      <NavMenu categorias={categories}>
       <LogoWidget/>
       </NavMenu>
       </header>
@@ -45,9 +47,9 @@ function App() {
 
         <Portfolio portfolio={portfolioImages}/>
 
-        <FooterContainer>
+        <SectionContainer>
         <ContactCard/>
-      </FooterContainer>
+      </SectionContainer>
       
 
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
-
+import { scroller } from '../../Utils/Functions';
 const NavMenu = (props) =>{
 
 
@@ -20,7 +20,7 @@ const NavMenu = (props) =>{
             <Nav className="justify-content-end" style={{ width: "100%"}}>
             
             <Nav.Link as={Link} to={"/"}>{"Inicio"}</Nav.Link>
-              {props.categorias.map((i) => <Nav.Link as={Link} to={`/categoria/${i}`}>{i}</Nav.Link>)
+              {props.categorias.map((i) => <Nav.Link onClick={()=>scroller(`${i.id}`)}>{i.name}</Nav.Link>)
               }
 
               
