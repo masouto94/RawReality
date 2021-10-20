@@ -7,9 +7,15 @@ const ServiceBarCard = ({servicios}) => {
         <>
         
         <Card display={"flex"} margin={"12%"} id={"ServiceBar"}>
-            {servicios.map(i =>{
-                return <div style={{backgroundColor:"black", width:"100%"}}><div style={{color:'white'}}>{i.name}</div><div onClick={()=>scroller(`tarjeta_${i.name}`)}><img src={i.image} alt={i.image} /></div></div>
+        <div id={"ServiceBarContainer"} >
+        {servicios.map(i =>{
+                return (<div>
+                    <div style={{color:'white'}}>{i.name}</div>
+                    <div onClick={()=>scroller(`tarjeta_${i.name}`)}>
+                        <img src={i.image} alt={i.image} /></div>
+                        </div>)
             })}
+        </div>
         </Card>
         
         </>

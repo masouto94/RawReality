@@ -12,7 +12,7 @@ const NavMenu = (props) =>{
    
         
         
-        <Navbar id={"NavBar"} bg="light" expand="lg" style={{position:"fixed", top:0, zIndex:1}}>
+        <Navbar className={"navBarText"} id={"NavBar"} bg="light" expand="lg" style={{position:"fixed", top:0, zIndex:1}}>
           
         <Nav.Item>{props.children}</Nav.Item>
         

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+ 
+
 }
 
 .App-logo {
@@ -38,6 +40,47 @@
   }
 }
 
-#AboutUsCard{
+.navBarText{
+  font-family: Roboto, sans-serif;
+  color:#D09C86;
+
+  
+}
+
+#LandingCard{
+  font-family: Roboto, sans-serif;
   align-items: center;
+  color: whitesmoke;
+}
+
+#AboutUsCard{
+  font-family: Roboto, sans-serif;
+  align-items: center;
+}
+#ServiceBarContainer{
+  background-color: black;
+  width: 100%;
+  display: inherit;
+  justify-content: space-around;
+  border-radius: 0 10em 0 10em ;
+  
+}
+
+.serviceCardContent {
+  font-family: Roboto, sans-serif;
+  color:#D09C86;
+}
+
+h1.serviceCardHeader {
+  font-family: Roboto, sans-serif;
+  color:#D09C86;
+}
+
+#PacksContainer{
+  font-family: Montserrat, sans-serif;
+  color:#D09C86
+}
+
+.PacksCard{
+  display: grid;
 }
