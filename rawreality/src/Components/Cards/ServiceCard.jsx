@@ -1,6 +1,8 @@
 import React from 'react'
 import Card from './Card'
 import SectionContainer from '../Containers/SectionContainer'
+import ImageContainer from '../NavBar/ImageContainer'
+
 const ServiceCard = ({servicios}) => {
     return (
         <>
@@ -14,9 +16,8 @@ const ServiceCard = ({servicios}) => {
             {<h1>{i.name}</h1>}
             {i.content}
         </div>
-        <div style={{justifyItems:"end"}}>
-        <img src={i.service_image} height={"100%"} width={"100%"}></img>
-        </div>
+        
+        <ImageContainer image={i.service_image}/>
         </div>
             
         </Card>
@@ -28,9 +29,9 @@ const ServiceCard = ({servicios}) => {
                 <SectionContainer>
                 <Card display={"block"} margin={"12%"}>
                     <div id={`tarjeta_${i.name}`} style={{display: "grid",gridTemplateColumns:"50vw 1fr", justifyItems:"start"}}>
-                <div >
-                <img src={i.service_image} height={"100%"} width={"70%"}></img>
-                </div>
+                    
+                <ImageContainer image={i.service_image}/>
+
                 <div  style={{textAlign:"right"}}>
                 {<h1>{i.name}</h1>}
                     {i.content}

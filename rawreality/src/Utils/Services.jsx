@@ -45,15 +45,6 @@ export const servicios = [
     </ul>
     <p>Estas promueven no sólo el producto en sí, sino el valor que tendrá la marca concebida como un todo. El producto ha de ser y representar la marca, ha de comunicar, ha de ser percibido por nuestra audiencia de la manera correcta.</p>
     </>)},
-    {name:"Comunicación estratégica",
-    image:"/servicios/comunicacion_estrategica.svg",
-    service_image:"/imagenes_servicios/meeting.svg",
-    content:(<>
-    <ul>
-        <li>Items</li>
-    </ul>
-    </>)
-    },
     {name:"Diseño",
     image:"/servicios/diseno.svg",
     service_image:"/imagenes_servicios/palette.svg",

@@ -47,10 +47,14 @@ function App() {
 
         <Portfolio portfolio={portfolioImages}/>
 
+
+
+
+<FooterContainer>
         <SectionContainer>
         <ContactCard/>
       </SectionContainer>
-      
+      </FooterContainer>
 
     </div>
     </BrowserRouter>

@@ -12,14 +12,14 @@ const NavMenu = (props) =>{
    
         
         
-        <Navbar bg="light" expand="lg">
+        <Navbar id={"NavBar"} bg="light" expand="lg" style={{position:"fixed", top:0, zIndex:1}}>
           
         <Nav.Item>{props.children}</Nav.Item>
         
         
             <Nav className="justify-content-end" style={{ width: "100%"}}>
             
-            <Nav.Link as={Link} to={"/"}>{"Inicio"}</Nav.Link>
+            <Nav.Link as={Link} to={"/"} onClick={()=>scroller("LandingCard")}>{"Inicio"}</Nav.Link>
               {props.categorias.map((i) => <Nav.Link onClick={()=>scroller(`${i.id}`)}>{i.name}</Nav.Link>)
               }
 
