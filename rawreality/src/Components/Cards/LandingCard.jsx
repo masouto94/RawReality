@@ -6,7 +6,7 @@ const LandingCard = () => {
     return (
         <>
         <Card display={"block"} margin={"12%"} id={"LandingCard"}>
-            <div style={{backgroundImage:'url("/logos/MaskGroup.png")'}}>
+            <div >
             <h1>Te ayudamos a hacer crecer tu negocio más rápido</h1>
             <p>Ayudamos a nuestros clientes a potenciar el valor del negocio, a través del desarrollo de estrategias creativas, innovadoras y visualmente atractivas. </p>
 

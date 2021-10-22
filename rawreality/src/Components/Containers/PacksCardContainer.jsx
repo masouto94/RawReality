@@ -11,13 +11,15 @@ const PacksCardContainer = () => {
             <h1>Nuestros combos</h1>
 
          <Card display={"grid"} margin={"12%"} id={"PacksContainer"}>
-             <div style={{ display:"grid",gridTemplateColumns:"50vw 1fr",borderStyle:"solid", borderWidth:"thin"}}>
+             <div style={{ display:"grid",gridTemplateColumns:"50% 50%",borderStyle:"solid", borderWidth:"thin"}}>
              {packs.map(i=>{
                  return(
                     <div className={"PacksCard"}>
                     <h1>{i.name}</h1>
+                    <div className={"PacksCardContent"}>
                     {i.description}
-                    <button className={'btn btn-secondary btn-outline'}>Comprar</button>
+                    </div>
+                    <button className={'btn btn-secondary btn-outline'}>Consultar Pack</button>
                     </div>
                  )
              }

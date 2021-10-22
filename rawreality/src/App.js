@@ -26,8 +26,8 @@ function App() {
       <LogoWidget/>
       </NavMenu>
       </header>
-
-      <SectionContainer>
+    <ScrollToTop/>
+      <SectionContainer id={"LandingContainer"}>
         <LandingCard/>
       </SectionContainer>
 
@@ -44,16 +44,16 @@ function App() {
     <SectionContainer>
     <PacksCardContainer/>
     </SectionContainer>
-
+    
+    <SectionContainer>
         <Portfolio portfolio={portfolioImages}/>
-
+        </SectionContainer>
 
 
 
 <FooterContainer>
-        <SectionContainer>
+        
         <ContactCard/>
-      </SectionContainer>
       </FooterContainer>
 
     </div>
