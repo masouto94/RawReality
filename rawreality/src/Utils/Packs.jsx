@@ -41,6 +41,8 @@ export const packs = [
         aquellos que tienen quien maneje sus redes pero quieren asesoramiento
         profesional y resultados medibles.
         </p>
+        
+        
         </>
     )},
 

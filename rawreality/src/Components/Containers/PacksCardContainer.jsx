@@ -19,7 +19,7 @@ const PacksCardContainer = () => {
                     <div className={"PacksCardContent"}>
                     {i.description}
                     </div>
-                    <button className={'btn btn-secondary btn-outline'}>Consultar Pack</button>
+                    <button className={'btn btn-secondary '}>Consultar Pack</button>
                     </div>
                  )
              }

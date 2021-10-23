@@ -42,22 +42,22 @@
 
 .navBarText{
   font-family: Roboto, sans-serif;
-  color:#D09C86;
+  color:black;
+  background-color: #D09C86;
 
   
 }
-
 
 
 #LandingContainer{
-  background-image: url(./Utils/MaskGroup.png) no-repeat center center;
-
-  
+  display: flex;
+  align-items: center;
 }
+
 #LandingCard{
   font-family: Roboto, sans-serif;
   align-items: center;
-  color: whitesmoke;
+  color: black;
 }
 
 #AboutUsCard{
@@ -90,20 +90,26 @@ h1.serviceCardHeader {
 
 .PacksCard{
   display: grid;
+  align-items: flex-end;
+  flex-direction: column;
 }
+
+
 footer{
   margin-top: 30%;
 }
 
 .back-to-top {
+  animation: forwards;
   position: fixed;
   bottom: 20px;
   right: 20px;
   font-size: 100px;
-  background: orange;
-  color: white;
+  background: pink;
+  color: black;
   cursor: pointer;
   border-radius: 100px;
   border: none;
   box-shadow: 0 5px 10px #ccc;
+  z-index: 1;
 }

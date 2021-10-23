@@ -27,7 +27,7 @@ function App() {
       </NavMenu>
       </header>
     <ScrollToTop/>
-      <SectionContainer id={"LandingContainer"}>
+      <SectionContainer id={"LandingContainer"} url={'/logos/MaskGroup.png'}>
         <LandingCard/>
       </SectionContainer>
 
