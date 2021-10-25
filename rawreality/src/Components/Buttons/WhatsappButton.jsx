@@ -1,11 +1,8 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import { BackToTop } from '../../Utils/Functions';
 
-const BackToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-const ScrollToTop = () => {
+const WhatsappButton = () => {
     
     const [showButton, setShowButton] = useState(false);
 
@@ -29,4 +26,4 @@ const ScrollToTop = () => {
     </>)
 }
 
-export default ScrollToTop
+export default WhatsappButton

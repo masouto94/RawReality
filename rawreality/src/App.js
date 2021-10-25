@@ -15,7 +15,7 @@ import Portfolio from './Components/Cards/Portfolio';
 import {servicios} from './Utils/Services';
 import PacksCardContainer from './Components/Containers/PacksCardContainer';
 import { portfolioImages } from './Utils/PortfolioImages';
-import ScrollToTop from './Components/Buttons/ScrollToTop';
+import WhatsappButton from './Components/Buttons/WhatsappButton';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       <LogoWidget/>
       </NavMenu>
       </header>
-    <ScrollToTop/>
+    <WhatsappButton/>
       <SectionContainer id={"LandingContainer"} url={'/logos/MaskGroup.png'}>
         <LandingCard/>
       </SectionContainer>
