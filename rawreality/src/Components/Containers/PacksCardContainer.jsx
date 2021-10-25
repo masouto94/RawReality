@@ -8,9 +8,10 @@ const PacksCardContainer = () => {
     return (
         <>
         <SectionContainer>
-            <h1>Nuestros combos</h1>
+            
 
          <Card display={"grid"} margin={"12%"} id={"PacksContainer"}>
+         <h1>Elegi tu pack</h1>
              <div style={{ display:"grid",gridTemplateColumns:"50% 50%",borderStyle:"solid", borderWidth:"thin"}}>
              {packs.map(i=>{
                  return(

@@ -10,8 +10,8 @@ const LandingCard = () => {
             <h1>Te ayudamos a hacer crecer tu negocio más rápido</h1>
             <p>Ayudamos a nuestros clientes a potenciar el valor del negocio, a través del desarrollo de estrategias creativas, innovadoras y visualmente atractivas. </p>
 
-            <button className={'btn btn-primary btn-outline'} onClick={()=>scroller("ServiceBar")}>Ir a Servicios</button>
-            <button className={'btn btn-secondary btn-outline'}>Pedir un presupuesto</button>
+            <button className={'landing-btn'} onClick={()=>scroller("ServiceBar")}>Ir a Servicios</button>
+            <button className={'landing-btn'}>Pedir un presupuesto</button>
             </div>
         </Card>
         </>

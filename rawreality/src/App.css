@@ -40,12 +40,23 @@
   }
 }
 
+.navBarText .navBarLogo{
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+}
 .navBarText{
   font-family: Roboto, sans-serif;
-  color:black;
-  background-color: #D09C86;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color:#D8A28A;
+  background-color: white;
+}
+#NavBar .nav-link{
+  color:#D8A28A;
 
-  
 }
 
 
@@ -54,14 +65,63 @@
   align-items: center;
 }
 
+.landing-btn{
+  padding:10px;
+  border:1px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 25px;
+  background-color: #D8A28A;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  color: white;
+  margin: 0 10vh;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  
+
+}
 #LandingCard{
   font-family: Roboto, sans-serif;
   align-items: center;
   color: black;
 }
 
+#LandingCard h1{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 76px;
+  
+}
+#LandingCard p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  
+}
+
 #AboutUsCard{
+  align-items: center;
+}
+
+#AboutUsCard h2{
+  margin-top: 1.5em;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
+}
+
+#AboutUsCard p{
   font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color:#979797;
   align-items: center;
 }
 #ServiceBarContainer{
@@ -75,23 +135,36 @@
 
 .serviceCardContent {
   font-family: Roboto, sans-serif;
-  color:#D09C86;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px; 
+  color: #979797;
 }
 
 h1.serviceCardHeader {
   font-family: Roboto, sans-serif;
-  color:#D09C86;
+  font-weight: 500;
+  font-size: 36px;
+  color: #BE9D94;
 }
 
 #PacksContainer{
   font-family: Montserrat, sans-serif;
   color:#D09C86
 }
+#PacksContainer h1{
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 28px;
+   color: #737070;
+}
 
-.PacksCard{
+#PacksContainer .PacksCard{
   display: grid;
   align-items: flex-end;
   flex-direction: column;
+  color:wheat
 }
 
 
@@ -99,17 +172,20 @@ footer{
   margin-top: 30%;
 }
 
-.back-to-top {
+.whatsapp-icon {
   animation: forwards;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 100px;
-  background: pink;
-  color: black;
+
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 50%;
   border: none;
+  
   box-shadow: 0 5px 10px #ccc;
   z-index: 1;
+}
+.whatsapp-icon img{
+    height: 80px;
+    width: 80px;
 }
