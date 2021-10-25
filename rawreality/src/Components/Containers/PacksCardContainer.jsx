@@ -11,8 +11,8 @@ const PacksCardContainer = () => {
             
 
          <Card display={"grid"} margin={"12%"} id={"PacksContainer"}>
-         <h1>Elegi tu pack</h1>
-             <div style={{ display:"grid",gridTemplateColumns:"50% 50%",borderStyle:"solid", borderWidth:"thin"}}>
+         <h1 id={"PacksContainerHeader"}>Elegí tu pack</h1>
+             <div style={{ display:"grid",gridTemplateColumns:"50% 50%"}}>
              {packs.map(i=>{
                  return(
                     <div className={"PacksCard"}>
@@ -20,7 +20,7 @@ const PacksCardContainer = () => {
                     <div className={"PacksCardContent"}>
                     {i.description}
                     </div>
-                    <button className={'btn btn-secondary '}>Consultar Pack</button>
+                    <button className={'PacksButton'}>Consultar Pack</button>
                     </div>
                  )
              }
