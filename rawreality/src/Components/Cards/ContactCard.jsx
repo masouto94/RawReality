@@ -1,94 +1,102 @@
 import React from "react";
 import Card from "./Card";
+import {Form, Button} from "react-bootstrap";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
+import {faWhatsapp, faBehance, faLinkedin, faInstagram} from '@fortawesome/free-brands-svg-icons';
 
 const ContactCard = () => {
+    const iconStyles = {
+        color: "#BE9D94",
+        fontSize: "25px",
+    };
     return (
         <>
-            <Card display={"flex"} margin={"5% 20%"}>
+            <Card display={"flex"} margin={"12%"}>
                 {/* INICIO CONTENIDO DEL LADO IZQUIERDO */}
+                <div style={{flex:"50%"}} className="get-started text-start mx-5 text-secondary">
+                    <h2 className="fs-1 mb-5 fw-bold">¿Listo para contactarnos?</h2>
+                    <ul className="list-unstyled">
+                        <li>
+                            <FontAwesomeIcon style={iconStyles} icon={faEnvelope}/>
 
-                <div id="ContactForm" className="text-start mx-5">
-                    <div className="titulo mb-5">
-                        <h2>¿Listo para contactarnos?</h2>
-                    </div>
-                    <div>
-                        <p>
-                            <i></i>
+
+
                             romgromero@gmail.com
-                        </p>
-                        <p>
-                            <i></i>
-                            <p>+54 9 11 51593906</p>
-                        </p>
-                        <p>
-                            <i></i>
+                        </li>
+                        <li>
+                            <FontAwesomeIcon style={iconStyles} icon={faWhatsapp}/>
+                            +54 9 11 51593906
+                        </li>
+                        <li>
+                            <FontAwesomeIcon style={iconStyles} icon={faBehance}/>
                             <a href="https://www.behance.net/rominaromero3">
                                 https://www.behance.net/rominaromero3
                             </a>
-                        </p>
-                        <p>
-                            <i></i>
+                        </li>
+                        <li>
+                            <FontAwesomeIcon style={iconStyles} icon={faLinkedin}/>
                             <a href="https://www.linkedin.com/in/romina-romero-b64a7993/">
                                 https://www.linkedin.com/in/romina-romero-b64a7993/
                             </a>
-                        </p>
-                        <p>
-                            <i></i>
+                        </li>
+                        <li>
+                            <FontAwesomeIcon style={iconStyles} icon={faInstagram}/>
                             <a href="https://www.instagram.com/romina_gabriela_romero_colombo/">
                                 https://www.instagram.com/romina_gabriela_romero_colombo/
                             </a>
-                        </p>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 {/* FIN CONTENIDO DEL LADO IZQUIERDO */}
 
                 {/* INICIO CONTENIDO DEL LADO DERECHO */}
-                <div>
-                    <h3 className="mb-5">Déjanos tu mensaje.</h3>
+                <div className="form" style={{flex:"50%"}}>
+                    <h3 className="mb-5 fs-4 text-start text-primary">Déjanos tu mensaje.</h3>
 
                     <form method="POST" id="form">
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="text"
                                 name="nombre"
-                                id="name"
+                                id="nombre"
                                 placeholder="Nombre"
-                                className="rounded w-100"
+                                className="w-100"
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Email"
-                                className="rounded w-100"
+                                className="w-100"
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="text"
                                 name="asunto"
                                 id="asunto"
                                 placeholder="Asunto"
-                                className="rounded w-100"
+                                className="w-100"
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <textarea
                                 rows="5"
-                                name="message"
+                                name="mensaje"
                                 id="mensaje"
                                 placeholder="Mensaje"
-                                className="rounded bg-primary w-100"
+                                className="w-100"
                                 required
                             ></textarea>
                         </div>
                         <div>
-                            <button className="btn btn-primary rounded w-100" type="submit">Enviar</button>
+                            <button className="w-100 custom-button fw-bold" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>

@@ -1,0 +1,13 @@
+// IMPORTAR ROBOTO FONT
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+// ESTILOS CUSTOMIZADOS
+$primary: #be9d94;
+$secondary: #474747;
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+// IMPORTAR BOOTSTRAP 5
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
