@@ -20,9 +20,9 @@ const WhatsappButton = () => {
     return (
         <>
         {showButton && (
-            <button onClick={BackToTop} className="back-to-top">
-              &#8679;
-            </button>)}
+            <a href="https://wa.me/541122330999" target={"_blank"} className="whatsapp-icon">
+              <img src="/whatsapp_icon.png" alt="" srcset="" />
+            </a>)}
     </>)
 }
 
