@@ -1,0 +1,57 @@
+@use "../general" as *;
+
+.get-started {
+    li {
+        font-weight: bold;
+        color: $secondary;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+
+        a,
+        p {
+            color: $secondary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+.form {
+    input,
+    textarea {
+        padding: 20px;
+        background-color: #be9d9436;
+        border-radius: 15px;
+        color: #000000;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        min-height: 200px;
+        max-height: 400px;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+.custom-button {
+    background-color: $primary;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+}

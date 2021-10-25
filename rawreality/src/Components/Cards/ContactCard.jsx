@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import '../../scss/form.scss';
 import {Form, Button} from "react-bootstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
@@ -15,10 +14,8 @@ const ContactCard = () => {
         <>
             <Card display={"flex"} margin={"12%"}>
                 {/* INICIO CONTENIDO DEL LADO IZQUIERDO */}
-                <div style={{flex:"50%"}} className="get-sarted text-start mx-5">
-                    <div className="titulo mb-5">
-                        <h2 className="fs-1">¿Listo para contactarnos?</h2>
-                    </div>
+                <div style={{flex:"50%"}} className="get-started text-start mx-5 text-secondary">
+                    <h2 className="fs-1 mb-5 fw-bold">¿Listo para contactarnos?</h2>
                     <ul className="list-unstyled">
                         <li>
                             <FontAwesomeIcon style={iconStyles} icon={faEnvelope}/>
@@ -51,21 +48,21 @@ const ContactCard = () => {
                 {/* FIN CONTENIDO DEL LADO IZQUIERDO */}
 
                 {/* INICIO CONTENIDO DEL LADO DERECHO */}
-                <div style={{flex:"50%"}}>
-                    <h3 className="mb-5 fs-4">Déjanos tu mensaje.</h3>
+                <div className="form" style={{flex:"50%"}}>
+                    <h3 className="mb-5 fs-4 text-start text-primary">Déjanos tu mensaje.</h3>
 
                     <form method="POST" id="form">
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="text"
                                 name="nombre"
-                                id="name"
+                                id="nombre"
                                 placeholder="Nombre"
-                                className="w-100 "
+                                className="w-100"
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="email"
                                 name="email"
@@ -75,7 +72,7 @@ const ContactCard = () => {
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <input
                                 type="text"
                                 name="asunto"
@@ -85,10 +82,10 @@ const ContactCard = () => {
                                 required
                             />
                         </div>
-                        <div className="m-2">
+                        <div>
                             <textarea
                                 rows="5"
-                                name="message"
+                                name="mensaje"
                                 id="mensaje"
                                 placeholder="Mensaje"
                                 className="w-100"
@@ -96,7 +93,7 @@ const ContactCard = () => {
                             ></textarea>
                         </div>
                         <div>
-                            <button className="w-100" type="submit">Enviar</button>
+                            <button className="w-100 custom-button fw-bold" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
