@@ -19,6 +19,9 @@ const ContactCard = () => {
                     <ul className="list-unstyled">
                         <li>
                             <FontAwesomeIcon style={iconStyles} icon={faEnvelope}/>
+
+
+
                             romgromero@gmail.com
                         </li>
                         <li>

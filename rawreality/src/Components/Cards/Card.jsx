@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Card = ({display, margin, children}) => {
+const Card = ({display, margin, children, id}) => {
     return (
-        <div style={{display:display, margin:margin}}>
+        <div id={id} style={{display:display, margin:margin}}>
             
                 {children}
             
