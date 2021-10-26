@@ -34,7 +34,8 @@ export const servicios = [
     image:"/servicios/branding.svg",
     service_image:"/imagenes_servicios/meeting_alt_1.svg",
     content:(<div className={"serviceCardContent"}>
-    <p>Trabajamos todas las acciones de una marca que constituyen su identidad:</p>
+    <p>Trabajamos todas las acciones de una marca<br></br>
+     que constituyen su identidad:</p>
     <ul>
         <li>Creación del logotipo.</li>
         <li>Elección de diseño general.</li>
@@ -43,7 +44,10 @@ export const servicios = [
         <li>Tono comunicacional.</li>
         <li>stética en general.</li>
     </ul>
-    <p>Estas promueven no sólo el producto en sí, sino el valor que tendrá la marca concebida como un todo. El producto ha de ser y representar la marca, ha de comunicar, ha de ser percibido por nuestra audiencia de la manera correcta.</p>
+    <p>Estas promueven no sólo el producto en sí,<br></br>
+     sino el valor que tendrá la marca concebida como un todo.<br></br>
+      El producto ha de ser y representar la marca, ha de comunicar, <br></br>
+      ha de ser percibido por nuestra audiencia de la manera correcta.</p>
     </div>)},
     {name:"Diseño",
     image:"/servicios/diseno.svg",

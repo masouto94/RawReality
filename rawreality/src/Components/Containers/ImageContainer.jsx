@@ -2,10 +2,10 @@ import React from 'react'
 
 const ImageContainer = ({image}) => {
     return (
-        <div style={{borderStyle:"none", borderWidth:"outline",border:"10%", borderColor:"black", borderRadius:"50%",alignItems:"center", verticalAlign:"middle", }}>
-        <div style={{backgroundImage:`url(${image})`, backgroundSize:"cover", borderStyle: "none", borderRadius:"50%", height:"50vh", width:"50vh",alignItems:"center", verticalAlign:"middle"}}>
+        // <div style={{borderStyle:"solid",margin:"10%", borderWidth:"thin", borderColor:"black", borderRadius:"50%",alignItems:"center", verticalAlign:"middle" }}>
+        <div style={{backgroundImage:`url(${image})`, border:"10px",backgroundSize:"cover", borderRadius:"50%", height:"50vh", width:"50vh",alignItems:"center"}}>
         </div>
-        </div>
+        // </div>
     )
 }
 

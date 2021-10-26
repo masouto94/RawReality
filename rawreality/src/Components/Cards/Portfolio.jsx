@@ -12,8 +12,8 @@ import {
 const Portfolio = ({portfolio}) => {
     return (
         <>
-            
-        <Card display={"block"} margin={"24% 0 "} id={"PortfolioCarrousel"}>
+        <Card display={"block"} margin={"23% 12% "} id={"PortfolioCarrousel"}>
+
         <MDBCarousel showIndicators showControls fade >
       <MDBCarouselInner >
           {portfolio.map(i=>{return (

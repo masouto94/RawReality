@@ -10,7 +10,7 @@ const PacksCardContainer = () => {
         <SectionContainer>
             
 
-         <Card display={"grid"} margin={"12%"} id={"PacksContainer"}>
+         <Card display={"grid"} margin={"0 12%"} id={"PacksContainer"}>
          <h1 id={"PacksContainerHeader"}>Elegí tu pack</h1>
              <div style={{ display:"grid",gridTemplateColumns:"50% 50%"}}>
              {packs.map(i=>{
