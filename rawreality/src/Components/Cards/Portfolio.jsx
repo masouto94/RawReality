@@ -12,7 +12,7 @@ import {
 const Portfolio = ({portfolio}) => {
     return (
         <>
-        <Card display={"block"} margin={"23% 12% "} id={"PortfolioCarrousel"}>
+        <Card display={"block"}  id={"PortfolioCarrousel"}>
 
         <MDBCarousel showIndicators showControls fade >
       <MDBCarouselInner >
