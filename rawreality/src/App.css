@@ -40,6 +40,10 @@
   }
 }
 
+.SectionContainer{
+  height: 100vh;
+}
+
 .navBarText .navBarLogo{
 font-weight: 900;
 font-size: 24px;
@@ -63,6 +67,8 @@ line-height: 28px;
 #LandingContainer{
   display: flex;
   align-items: center;
+  background-image: url('./Utils/MaskGroup.png');
+  background-position: center;
 }
 
 .landing-btn{
@@ -125,12 +131,31 @@ line-height: 28px;
   align-items: center;
 }
 #ServiceBarContainer{
+  padding: 2em;
   background-color: black;
   width: 100%;
   display: inherit;
   justify-content: space-around;
   border-radius: 0 10em 0 10em ;
   
+}
+
+#ServiceBar{
+  display: flex; 
+  
+}
+.ImageContainer{
+  border: 10px;
+  background-size:cover;
+  border-radius:50px;
+  height:50vh;
+  width:50vh;
+}
+.ServiceCard{
+display: flex;
+grid-template-columns:50% 50%;
+ justify-content:space-around;
+ height: 100%;
 }
 
 .serviceCardContent {
@@ -220,4 +245,31 @@ footer{
 
 #PortfolioCarrousel{
   margin: 35% 12%;
+}
+
+@media only screen and (max-width: 640px) {
+  #PacksContainer .PacksCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+   
+    color: #585858;
+    border: 1px solid;
+    border-style: outset;
+    border-width: 2px;
+  
+    border-radius: 50px;
+    padding: 1em;
+    box-shadow: 0px 3px 3px #ccc;
+    margin-bottom: 1em;
+  };
+
+  .ImageContainer{
+    background-size:contain no-repeat;
+
+    height:50vh;
+    width:50vh;
+  }
+
 }

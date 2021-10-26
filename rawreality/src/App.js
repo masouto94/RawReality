@@ -27,7 +27,7 @@ function App() {
       </NavMenu>
       </header>
     <WhatsappButton/>
-      <SectionContainer id={"LandingContainer"} url={'/logos/MaskGroup.png'}>
+      <SectionContainer id={"LandingContainer"} >
         <LandingCard/>
       </SectionContainer>
 
