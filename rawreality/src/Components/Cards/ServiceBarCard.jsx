@@ -6,7 +6,7 @@ const ServiceBarCard = ({servicios}) => {
     return (
         <>
         
-        <Card display={"flex"} margin={"0 12%"} id={"ServiceBar"}>
+        <Card id={"ServiceBar"}>
         <div id={"ServiceBarContainer"} >
         {servicios.map(i =>{
                 return (<div>

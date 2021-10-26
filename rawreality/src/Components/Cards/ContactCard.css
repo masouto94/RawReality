@@ -1,3 +1,6 @@
+.get-started .text-start{
+    width: 50vw;
+}
 .get-started, .get-started a, .get-started p:hover, .get-started a:hover{
     color: #737070;
 }
