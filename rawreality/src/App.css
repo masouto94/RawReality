@@ -1,7 +1,6 @@
 .App {
   text-align: center;
- 
-
+  overflow: hidden;
 }
 
 .App-logo {
@@ -77,6 +76,8 @@ line-height: 28px;
   color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
+  width: 125px;
+  align-self: center;
 } 
 
 #NavBar .navbar-nav > a{
@@ -158,7 +159,7 @@ line-height: 28px;
 }
 #ServiceBarContainer{
   padding: 2em;
-  background-color: black;
+  background-color: #24242C;
   width: 100%;
   display: inherit;
   justify-content: space-around;
@@ -180,7 +181,10 @@ line-height: 28px;
 }
 .ImageWrapper img{
   height: 100%;
-  width: 100%;
+  width: 150%;
+  border: 0.5px solid #BE9D94;
+  border-radius: 100%;
+  padding: 30px;
 }
 .ServiceCard{
 display: flex;

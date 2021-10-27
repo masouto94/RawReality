@@ -9,7 +9,7 @@ export const categories = [
 },
 {
     name:"Proyectos",
-    id:"Portfolio"
+    id:"PortfolioCarrousel"
 },
 {
     name:"Contacto",
