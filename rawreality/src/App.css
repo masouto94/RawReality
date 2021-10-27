@@ -53,37 +53,60 @@ line-height: 28px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
-  color:#D8A28A;
-  background-color: white;
+  color:#BE9D94;
+  background-color: #ffffff;
 }
+
+#NavBar{
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 #NavBar .nav-link{
-  color:#D8A28A;
+  color:#BE9D94;
 
 }
 
+#NavBar .nav-link:nth-last-child(1){
+  background-color: #BE9D94;
+  border-radius: 25px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+
+#NavBar .navbar-nav > a{
+  margin: 0 20px;
+}
 
 #LandingContainer{
   display: flex;
   align-items: center;
   background-image: url('./Utils/MaskGroup.png');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
 
 .landing-btn{
-  padding:10px;
+  padding:20px;
+  width: 213px;
   border:1px;
   box-sizing: border-box;
   border-style: solid;
   border-width: thin;
   border-color: white;
   border-radius: 25px;
-  background-color: #D8A28A;
+  background-color: transparent;
   background-repeat:no-repeat;
   cursor:pointer;
   color: white;
-  margin: 0 10vh;
+  margin: 5vh 4vh;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -94,12 +117,14 @@ line-height: 28px;
   font-family: Roboto, sans-serif;
   align-items: center;
   color: white;
+  width: 50%;
 }
 
 #LandingCard h1{
   font-weight: 700;
   font-size: 48px;
   line-height: 76px;
+  margin-bottom: 20px;
   
 }
 #LandingCard p{
@@ -111,6 +136,7 @@ line-height: 28px;
 
 #AboutUsCard{
   align-items: center;
+  text-align: start;
 }
 
 #AboutUsCard h2{
@@ -137,7 +163,8 @@ line-height: 28px;
   display: inherit;
   justify-content: space-around;
   border-radius: 0 10em 0 10em ;
-  
+  align-items: center;
+  margin-bottom: 16em;
 }
 
 #ServiceBar{

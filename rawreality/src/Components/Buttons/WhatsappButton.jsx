@@ -19,7 +19,7 @@ const WhatsappButton = () => {
     return (
         <>
         {showButton && (
-            <a href="https://wa.me/541122330999" target={"_blank"} className="whatsapp-icon">
+            <a href="https://wa.me/5491151593906" target={"_blank"} className="whatsapp-icon">
               <img src="/whatsapp_icon.png" alt="" srcSet="" />
             </a>)}
     </>)

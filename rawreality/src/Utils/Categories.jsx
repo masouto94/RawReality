@@ -1,10 +1,15 @@
-export const categories = [{
+export const categories = [
+{
+    name:"Nosotros",
+    id:"AboutUsCard"
+},
+{
     name:"Servicios",
     id:"ServiceBar"
 },
 {
-    name:"Nosotros",
-    id:"AboutUsCard"
+    name:"Proyectos",
+    id:"Portfolio"
 },
 {
     name:"Contacto",

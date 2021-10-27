@@ -28,19 +28,18 @@ const ContactCard = () => {
                         <li className="fw-bold text-start mb-4 d-flex">
                             <FontAwesomeIcon className="me-2" style={iconStyles} icon={faBehance}/>
                             <a href="https://www.behance.net/rominaromero3">
-                                rominaromero3
+                            https://www.behance.net/rominaromero3
                             </a>
                         </li>
                         <li className="fw-bold text-start mb-4 d-flex">
                             <FontAwesomeIcon className="me-2" style={iconStyles} icon={faLinkedin}/>
                             <a href="https://www.linkedin.com/in/romina-romero-b64a7993/">
-                                Romina Colombo
-                            </a>
+                            https://www.linkedin.com/in/romina-romero-b64a7993/                            </a>
                         </li>
                         <li className="fw-bold text-start mb-4 d-flex">
                             <FontAwesomeIcon className="me-2" style={iconStyles} icon={faInstagram}/>
                             <a href="https://www.instagram.com/romina_gabriela_romero_colombo/">
-                                romina_gabriela_romero_colombo
+                            https://www.instagram.com/romina_gabriela_romero_colombo/
                             </a>
                         </li>
                     </ul>
