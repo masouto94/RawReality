@@ -8,7 +8,7 @@ import { scroller, BackToTop } from "../../Utils/Functions";
 const NavMenu = (props) => {
     return (
         <Navbar className={"navBarText"} id={"NavBar"} expand="lg" style={{ position: "fixed", top: 0, zIndex: 1 }}>
-            <Container fluid>
+            <Container>
                 <Navbar.Brand href="#">{props.children}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
