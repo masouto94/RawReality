@@ -41,10 +41,6 @@
   }
 }
 
-.SectionContainer{
-  min-height: 100vh;
-}
-
 .navBarText .navBarLogo{
 font-weight: 900;
 font-size: 1.5rem;
@@ -91,6 +87,7 @@ color:#BE9D94;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .landing-btn{
@@ -144,11 +141,14 @@ color:#BE9D94;
   text-align: start;
 }
 
+#AboutUsCard .row{
+  align-items: center;
+}
+
 #AboutUsCard h2{
-  margin-bottom: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: calc(0.8rem + 2vw);
+  font-size: calc(0.2rem + 1.5vw);
   line-height: 1.813rem;
   align-items: center;
   text-align: start;
@@ -170,6 +170,12 @@ color:#BE9D94;
   height: auto;
 }
 
+#ServiceBar{
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+
 #ServiceBarContainer{
   padding: 2em;
   background-color: #24242C;
@@ -181,11 +187,7 @@ color:#BE9D94;
   margin-bottom: 16em;
 }
 
-#ServiceBar{
-  display: flex; 
-  
-}
-.ImageContainer{
+/* .ImageContainer{
   border: 10px;
   background-size:cover;
   height:50vh;
@@ -197,18 +199,23 @@ color:#BE9D94;
   border: 1px solid #BE9D94;
   border-radius: 100%;
   padding: 1.875rem;
-}
+} */
 .ServiceCard{
   display: flex;
-  grid-template-columns:50% 50%;
-  justify-content:space-around;
-  height: 100%;
+  align-items: center;
+}
+
+.ServiceCard img{
+  max-width: 250%;
+  border: 1px solid #BE9D94;
+  border-radius: 100%;
+  padding: 2rem;
 }
 
 .serviceCardContent {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: calc(0.6em + 0.5vw);
   line-height: 1.875rem; 
   color: #979797;
 }
@@ -216,7 +223,7 @@ color:#BE9D94;
 h1.serviceCardHeader {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: calc(0.8rem + 2vw);
   color: #BE9D94;
 }
 
@@ -273,10 +280,6 @@ h1.serviceCardHeader {
     border: none;
 }
 
-footer{
-  margin-top: 30%;
-}
-
 .whatsapp-icon {
   animation: forwards;
   position: fixed;
@@ -295,7 +298,17 @@ footer{
 }
 
 #PortfolioCarrousel{
-  margin: 35% 12%;
+  margin: 0 5%;
+}
+
+#PortfolioCarrousel h2{
+  margin-top: 6rem;
+}
+
+#PortfolioCarrousel h2{
+  color: #737070;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.8rem + 2vw);
 }
 
 @media screen and (max-width:991.98px) {
@@ -312,20 +325,36 @@ footer{
     width: 100%;
   }
 
-  #AboutUsCard h2{
+  #AboutUsCard h2,  #AboutUsCard .img-col, #AboutUsCard p{
     text-align: center;
+  }
+
+  #AboutUsCard h2{
+    margin-bottom: 1rem;
   }
 
   #AboutUsCard img{
     max-width: 50%;
   }
 
-  #AboutUsCard .img-col{
-    text-align: center;
+  #ServiceBar #ServiceBarContainer{
+    flex-direction: column;
+  }
+
+  #ServiceBar .service{
+    margin: 2rem 0;
+  }
+
+  .ServiceCard img{
+    max-width: 150%;
+  }
+
+  .ServiceCard .img-left{
+    order: 2;
   }
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   #PacksContainer .PacksCard{
     display: flex;
     align-items: center;
@@ -338,8 +367,7 @@ footer{
   .ImageContainer{
     background-size:contain no-repeat;
 
-    height:50vh;
     width:50vh;
   }
 
-}
+} */

@@ -10,6 +10,7 @@ const NavMenu = (props) => {
         <Navbar className={"navBarText"} id={"NavBar"} expand="lg" style={{ position: "fixed", top: 0, zIndex: 1 }}>
             <Container>
                 <Navbar.Brand href="#">{props.children}</Navbar.Brand>
+                <span className="fs-4 me-4">RawReality</span>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-end" style={{ width: "100%" }}>
