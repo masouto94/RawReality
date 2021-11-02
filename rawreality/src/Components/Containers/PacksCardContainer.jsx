@@ -12,14 +12,16 @@ const PacksCardContainer = () => {
         <>
             <SectionContainer>
                 <Card margin={"0 5%"} id={"PacksContainer"}>
-                    <h2 id={"PacksContainerHeader"}>Elegí tu pack</h2>
+                    <h2 className="heading-line" id={"PacksContainerHeader"}>
+                        Elegí tu pack
+                    </h2>
                     <Container>
                         <Row className="gy-5">
                             {packs.map((i) => {
                                 return (
                                     <Col xs={12} lg={6}>
                                         <div className={"PacksCard"}>
-                                            <h2 className="fw-bold">{i.name}</h2>
+                                            <h2 className="heading-line">{i.name}</h2>
                                             <div className={"PacksCardContent"}>{i.description}</div>
                                             <button className={"PacksButton"}>Consultar Pack</button>
                                         </div>

@@ -6,8 +6,8 @@ import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCarouselElement, MDB
 const Portfolio = ({ portfolio }) => {
     return (
         <>
-            <Card display={"block"} id={"PortfolioCarrousel"}>
-                <h2 className="fw-bold">Projectos realizados</h2>
+            <Card margin={"5% 5% 3% 5%"} display={"block"} id={"PortfolioCarrousel"}>
+                <h2 className=" fw-bold heading-line">Projectos realizados</h2>
                 <MDBCarousel showIndicators showControls fade>
                     <MDBCarouselInner>
                         {portfolio.map((i) => {
@@ -17,16 +17,13 @@ const Portfolio = ({ portfolio }) => {
                                         <SectionContainer>
                                             <MDBCarouselElement src={i.image} alt="..." style={{ height: "100%", margin: "25% 0" }} />
                                         </SectionContainer>
-                                        <MDBCarouselCaption>
-                                            <h5>{i.name}</h5>
-                                            <p>{i.description}</p>
-                                        </MDBCarouselCaption>
                                     </MDBCarouselItem>
                                 </>
                             );
                         })}
                     </MDBCarouselInner>
                 </MDBCarousel>
+                <div className="footer-line"></div>
             </Card>
         </>
     );

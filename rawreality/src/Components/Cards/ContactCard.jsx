@@ -11,13 +11,13 @@ import "./ContactCard.css";
 const ContactCard = () => {
     return (
         <>
-            <Card margin={"3% 5%"} id={"ContactForm"}>
+            <Card margin={"5% 5% 3% 5%"} id={"ContactForm"}>
                 <Container>
                     <Row>
                         {/* INICIO CONTENIDO DEL LADO IZQUIERDO */}
                         <Col xs={12} lg={7} className={"p-3"}>
                             <div className="get-started text-start">
-                                <h2 className="mb-5 fw-bold">¿Listo para contactarnos?</h2>
+                                <h2 className="heading-line mb-5 fw-bold">¿Listo para contactarnos?</h2>
                                 <ul className="list-unstyled">
                                     <li className="fw-bold text-start mb-4">
                                         <FontAwesomeIcon className="icons me-2" icon={faEnvelope} />
