@@ -1,6 +1,25 @@
-.get-started .text-start{
-    width: 50vw;
+#ContactForm{
+    font-size: calc(0.6em + 0.5vw);
 }
+
+#ContactForm h2{
+    font-size: calc(0.8rem + 2vw);
+}
+
+#ContactForm h3{
+    font-size: calc(0.7rem + 1.5vw);
+}
+
+#ContactForm .icons{
+    font-size: calc(0.7rem + 1.5vw);
+    color: #BE9D94;
+}
+
+#ContactForm li{
+    display: flex;
+    align-items: center;
+}
+
 .get-started, .get-started a, .get-started p:hover, .get-started a:hover{
     color: #737070;
 }
@@ -11,7 +30,7 @@
 
 .form input, .form
 textarea {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #be9d9436;
     border-radius: 15px;
     color: #000000;
@@ -24,14 +43,14 @@ textarea {
 }
 
 .form textarea {
-    min-height: 200px;
-    max-height: 400px;
+    min-height: 12.5rem;
+    max-height: 25rem;
 }
 
 .custom-button {
     background-color: #be9d94;
     color: #ffffff;
     border-radius: 15px;
-    padding: 20px;
+    padding: 1.25rem;
     border: none;
 }

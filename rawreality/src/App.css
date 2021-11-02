@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 .App {
   text-align: center;
- 
-
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -22,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.625rem + 2vmin);
   color: white;
 }
 
@@ -40,200 +41,297 @@
   }
 }
 
-.SectionContainer{
-  height: 100vh;
-}
-
 .navBarText .navBarLogo{
 font-weight: 900;
-font-size: 24px;
-line-height: 28px;
+font-size: 1.5rem;
+line-height: 2rem;
+color:#BE9D94;
 }
 .navBarText{
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 20px;
-  line-height: 28px;
-  color:#D8A28A;
-  background-color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  color:#BE9D94;
+  background-color: #ffffff;
 }
+
+#NavBar{
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 #NavBar .nav-link{
-  color:#D8A28A;
-
+  color:#BE9D94;
 }
 
+#NavBar .nav-link:nth-last-child(1){
+  background-color: #BE9D94;
+  border-radius: 25px;
+  color: #ffffff;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  align-self: center;
+} 
+
+#NavBar .navbar-nav > a{
+  margin: 0 .7rem;
+}
 
 #LandingContainer{
   display: flex;
+  padding-bottom: 10vh;
   align-items: center;
   background-image: url('./Utils/MaskGroup.png');
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .landing-btn{
-  padding:10px;
+  padding:calc(.2rem + 1vw);
+  width: calc(11em + 4vw);
   border:1px;
   box-sizing: border-box;
   border-style: solid;
   border-width: thin;
   border-color: white;
   border-radius: 25px;
-  background-color: #D8A28A;
-  background-repeat:no-repeat;
+  background-color: transparent;
   cursor:pointer;
   color: white;
-  margin: 0 10vh;
+  margin: 1vh 1vh;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: calc(0.4em + 0.5vw);
+  line-height: 1.188rem;
   
 
 }
+
+.landing-btn:hover{
+  background-color: #ffffff;
+  color: #BE9D94;
+}
+
 #LandingCard{
   font-family: Roboto, sans-serif;
   align-items: center;
   color: white;
+  width: 50%;
 }
 
 #LandingCard h1{
   font-weight: 700;
-  font-size: 48px;
-  line-height: 76px;
+  font-size: calc(0.8rem + 2vw);
+  line-height: calc(1em + 2vw);
+  margin-bottom: 1.25rem;
   
 }
 #LandingCard p{
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: calc(0.6em + 0.5vw);
+  line-height: calc(1em + 2vw);
+  margin: 1rem 2.5rem;
   
 }
 
 #AboutUsCard{
   align-items: center;
+  text-align: start;
+}
+
+#AboutUsCard .row{
+  align-items: center;
 }
 
 #AboutUsCard h2{
-  margin-top: 1.5em;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: calc(0.8rem + 1.5vw);
+  line-height: 1.813rem;
   align-items: center;
+  text-align: start;
+  color: #000000;
+  margin-bottom: -10%;
 }
 
 #AboutUsCard p{
-  font-family: Roboto, sans-serif;
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: calc(0.6em + 0.5vw);
+  line-height: 1.7rem;
   color:#979797;
   align-items: center;
 }
+
+#AboutUsCard img{
+  max-width: 100%;
+  height: auto;
+}
+
+#ServiceBar{
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+
 #ServiceBarContainer{
   padding: 2em;
-  background-color: black;
+  background-color: #24242C;
   width: 100%;
   display: inherit;
   justify-content: space-around;
   border-radius: 0 10em 0 10em ;
-  
+  align-items: center;
+  margin-bottom: 10em;
+  font-size: calc(0.6em + 0.5vw);
 }
 
-#ServiceBar{
-  display: flex; 
-  
-}
-.ImageContainer{
+/* .ImageContainer{
   border: 10px;
   background-size:cover;
-  border-radius:50px;
   height:50vh;
   width:50vh;
 }
 .ImageWrapper img{
   height: 100%;
-  width: 100%;
-}
+  width: 150%;
+  border: 1px solid #BE9D94;
+  border-radius: 100%;
+  padding: 1.875rem;
+} */
 .ServiceCard{
-display: flex;
-grid-template-columns:50% 50%;
- justify-content:space-around;
- height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ServiceCard img{
+  max-width: 250%;
+  border: 1px solid #BE9D94;
+  border-radius: 100%;
+  padding: 2rem;
 }
 
 .serviceCardContent {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 30px; 
+  font-size: calc(0.6em + 0.5vw);
+  line-height: 1.875rem; 
   color: #979797;
 }
 
 h1.serviceCardHeader {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 36px;
+  font-size: calc(0.8rem + 2vw);
   color: #BE9D94;
 }
 
 #PacksContainer{
-  font-family: Montserrat, sans-serif;
-  display: grid;
-  align-items: flex-end;
-  flex-direction: column;
-
+  font-family: 'Roboto', sans-serif;
   color:#D09C86;
 }
+
 #PacksContainerHeader{
-  font-family: Montserrat, sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 28px;
-   color: #737070;
-   margin: 2em;
+  font-size: calc(0.8rem + 2vw);
+  line-height: 1.75rem;
+  color: #737070;
+  margin: 2em;
 }
 
-#PacksContainer .PacksCard h1{
+#PacksContainer .PacksCard h2{
   font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: calc(0.8rem + 2vw);
   color: #BE9D94;
   
 }
 
 #PacksContainer .PacksCard{
-  display: grid;
-  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  height: 100%;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: calc(0.6em + 0.5vw);
+  line-height: calc(1em + 2vw);
   color: #585858;
-  border: 1px solid;
-  border-style: outset;
-  border-width: 2px;
-  margin:1em;
-  border-radius: 50px;
-  padding: 50px;
-  box-shadow: 0px 3px 3px #ccc;
-  
-}
-.PacksButton{
-  background: #BE9D94;
-  border-radius: 25px;
-  color: white;
+  border: 0.55px solid #A7A7A7;
+  border-radius: 2.125rem;
+  padding: 3.125rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
 }
 
-footer{
-  margin-top: 30%;
+#PacksContainer div:nth-child(4) .PacksCard {
+  border: 3px solid#BE9D94;
+}
+
+#PacksContainer .PacksCardContent{
+  text-align: start;
+}
+
+#PacksContainer .PacksCardContent ul{
+  margin-left: 1rem;
+}
+
+.PacksButton{
+    background-color: #be9d94;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: .5rem 2rem;
+    border: none;
+}
+
+#PortfolioCarrousel h2{
+  color: #737070;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.8rem + 2vw);
+  margin-bottom: -20%;
+  margin-top: 20%;
+}
+
+#PortfolioCarrousel .footer-line{
+  position: relative;
+}
+
+#PortfolioCarrousel .footer-line::after{
+  content: "";
+  width: 80%;
+  height: .2rem;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  margin: 0 2rem;
+  background-color: #BE9D94;
+}
+
+#PortfolioCarrousel .footer-line::before{
+  content: "";
+  width: 80%;
+  height: .2rem;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  margin: 1rem 1rem;
+  background-color: #BE9D94;
+}
+
+#PortfolioCarrousel .carousel{
+  margin: -10rem 0;
+}
+
+#ContactForm h2::after{
+  margin: 1.2rem 3%;
 }
 
 .whatsapp-icon {
   animation: forwards;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
 
   cursor: pointer;
   border-radius: 50%;
@@ -243,37 +341,88 @@ footer{
   z-index: 1;
 }
 .whatsapp-icon img{
-    height: 80px;
-    width: 80px;
+    width: calc(3rem + 2vw);
 }
 
-#PortfolioCarrousel{
-  margin: 35% 12%;
+.heading-line::after {
+  content: "";
+  width: 7rem;
+  height: .25rem;
+  border-radius: 15px;
+  display: block;
+  margin: 1.3rem auto;
+  background-color: #BE9D94;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width:991.98px) {
+  #NavBar .nav-link:nth-child(-n+4){
+    line-height: 1.25rem;
+  }
+
+  #NavBar .nav-link:nth-last-child(1){
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+  }
+
+  #LandingCard{
+    width: 100%;
+  }
+
+  #AboutUsCard h2,  #AboutUsCard .img-col, #AboutUsCard p{
+    text-align: center;
+  }
+
+  #AboutUsCard h2{
+    margin-bottom: 1rem;
+  }
+
+  #AboutUsCard img{
+    max-width: 50%;
+  }
+
+  #ServiceBar #ServiceBarContainer{
+    flex-direction: column;
+  }
+
+  #ServiceBar .service{
+    margin: 2rem 0;
+  }
+
+  #ServiceBar .img-fluid{
+    width: 50%;
+  }
+
+  .ServiceCard img{
+    max-width: 150%;
+  }
+
+  .ServiceCard .img-left{
+    order: 2;
+  }
+
+  #PortfolioCarrousel .carousel{
+    margin: -3rem 0;
+  }
+
+  #PortfolioCarrousel h2{
+    margin-bottom: -5rem;
+  }
+}
+
+/* @media only screen and (max-width: 640px) {
   #PacksContainer .PacksCard{
     display: flex;
     align-items: center;
     flex-direction: column;
     font-weight: 500;
-   
-    color: #585858;
-    border: 1px solid;
-    border-style: outset;
-    border-width: 2px;
-  
-    border-radius: 50px;
     padding: 1em;
-    box-shadow: 0px 3px 3px #ccc;
     margin-bottom: 1em;
   };
 
   .ImageContainer{
     background-size:contain no-repeat;
 
-    height:50vh;
     width:50vh;
   }
 
-}
+} */

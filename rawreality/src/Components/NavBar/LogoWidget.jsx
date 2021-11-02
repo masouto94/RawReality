@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 const LogoWidget = () => {
     return (
-        <div className="justify-content-start navBarLogo" style={{display:"flex", alignItems:"center"}}>
-         <img src={'logos/logo_circulo.jpeg'} height={"8%"} width={"10%"}/>
-         RawReality   
+        <div className="justify-content-start navBarLogo" style={{ display: "flex", alignItems: "center" }}>
+            <img src={"logos/logo_rr.jpeg"} width={"58px"} />
         </div>
-    )
-}
+    );
+};
 
-export default LogoWidget
+export default LogoWidget;
