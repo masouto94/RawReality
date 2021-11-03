@@ -274,6 +274,24 @@ h1.serviceCardHeader {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
 }
 
+#PacksContainer #packFull{
+  position: relative;
+}
+
+#PacksContainer #packFull::after{
+  position: absolute;
+  content: "Más vendidos";
+  font-size: calc(.3em + .8vw);
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  height: 40px;
+  background: #BE9D94;
+  border-radius: 1.5rem 1.5rem 0 0;
+  line-height: 40px;
+}
+
 #PacksContainer div:nth-child(4) .PacksCard {
   border: 3px solid#BE9D94;
 }
@@ -415,6 +433,10 @@ h1.serviceCardHeader {
 
   #PortfolioCarrousel h2{
     margin-bottom: -5rem;
+  }
+
+  #PacksContainer #packFull::after{
+    font-size: calc(.5em + 2vw);
   }
 }
 

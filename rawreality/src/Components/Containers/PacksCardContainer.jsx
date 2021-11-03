@@ -20,7 +20,7 @@ const PacksCardContainer = () => {
                             {packs.map((i) => {
                                 return (
                                     <Col xs={12} lg={6}>
-                                        <div className={"PacksCard"}>
+                                        <div id={i.id} className={"PacksCard"}>
                                             <h2 className="heading-line">{i.name}</h2>
                                             <div className={"PacksCardContent"}>{i.description}</div>
                                             <button className={"PacksButton"}>Consultar Pack</button>

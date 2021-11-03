@@ -16,6 +16,7 @@ export const packs = [
                 </ul>
             </>
         ),
+        id: "packBasico",
     },
 
     {
@@ -33,6 +34,7 @@ export const packs = [
                 </ul>
             </>
         ),
+        id: "packIntensivo",
     },
 
     {
@@ -45,6 +47,7 @@ export const packs = [
                 </p>
             </>
         ),
+        id: "consultoria",
     },
 
     {
@@ -59,5 +62,6 @@ export const packs = [
                 <p>El precio full pack se paga una sola vez por todo el armado inicial desde cero, luego se paga el abono mensual (no incluye el setteo especial, sí el reporte)</p>
             </>
         ),
+        id: "packFull",
     },
 ];
