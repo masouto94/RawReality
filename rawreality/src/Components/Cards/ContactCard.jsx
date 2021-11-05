@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faWhatsapp, faBehanceSquare, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import "./ContactCard.css";
 
 const ContactCard = () => {
     return (
