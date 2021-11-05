@@ -6,7 +6,7 @@ import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCarouselElement, MDB
 const Portfolio = ({ portfolio }) => {
     return (
         <>
-            <Card margin={"5% 5% 3% 5%"} display={"block"} id={"PortfolioCarrousel"}>
+            <Card margin={"5% 15% 3% 15%"} display={"block"} id={"PortfolioCarrousel"}>
                 <h2 className=" fw-bold heading-line">Projectos realizados</h2>
                 <MDBCarousel showIndicators showControls fade>
                     <MDBCarouselInner>

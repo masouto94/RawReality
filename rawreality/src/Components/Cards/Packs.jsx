@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Packs = ({packs}) => {
+const Packs = ({ packs }) => {
     return (
         <>
-         {packs.map(i=>{<h1>{i.name}</h1>})}   
+            {packs.map((i) => {
+                <h1>{i.name}</h1>;
+            })}
         </>
-    )
-}
+    );
+};
 
-export default Packs
+export default Packs;
