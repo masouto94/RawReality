@@ -1,17 +1,23 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
+import { scroller } from "../../Utils/Functions";
+
 const LandingCard = () => {
     return (
         <>
-        <Card display={"block"} margin={"12%"}>
-            <h1>Te ayudamos a hacer crecer tu negocio más rápido</h1>
-            <p>Ayudamos a nuestros clientes a potenciar el valor del negocio, a través del desarrollo de estrategias creativas, innovadoras y visualmente atractivas. </p>
+            <Card display={"block"} margin={"0 5%"} id={"LandingCard"}>
+                <div>
+                    <h1>Te ayudamos a hacer crecer tu negocio más rápido</h1>
+                    <p>Ayudamos a nuestros clientes a potenciar el valor del negocio, a través del desarrollo de estrategias creativas, innovadoras y visualmente atractivas. </p>
 
-            <button className={'btn btn-primary btn-outline'}>Ir a Servicios</button>
-            <button className={'btn btn-secondary btn-outline'}>Pedir un presupuesto</button>
-        </Card>
+                    <button className={"landing-btn"} onClick={() => scroller("ServiceBar")}>
+                        Ir a Servicios
+                    </button>
+                    <button className={"landing-btn"}>Pedir un presupuesto</button>
+                </div>
+            </Card>
         </>
-    )
-}
+    );
+};
 
-export default LandingCard
+export default LandingCard;

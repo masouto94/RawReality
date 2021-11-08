@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SectionContainer = ({children}) => {
+const SectionContainer = ({children, id, url}) => {
     return (
         <>
-            <section style={{height: "100vh"}}>
+            <section className={"SectionContainer"} id={id} >
             {children}
             </section>
         </>
