@@ -13,10 +13,10 @@ const AboutUsCard = () => {
                         <h2>¿Por qué elegir Raw Reality?</h2>
                         <Col xs={12} lg={6} className="order-3 order-lg-2">
                             <p>
-                                Porque me gusta el diseño, la comunicación y el branding. Me gusta crear una imagen de como quieren que sea percibida una marca (sea empresa o persona como marca en sí
-                                misma). Se ofrecen diversas estrategias que incluyen desde la percepción visual, tono comunicacional, estética general, canales de comunicación a utilizar, para lograr
-                                un objetivo determinado definido por el cliente, por ej: aumento en la interacción del contenido que sube, aumento de leads, nueva percepción de la marca (redefinir una
-                                marca determinada), aumento de ventas si ofrece productos o servicios etc
+                                Porque creemos que el éxito de una marca, entendida como producto, servicio o mismo persona, reside en su identidad. La identidad es todo. Creemos que la percepción de
+                                la marca que tiene la audiencia es fundamental para lograr el éxito. Para ello se deben evaluar estrategias, tanto visuales, comunicacionales, estética en general,
+                                canales a utilizar para darla a difundir; todo según el rubro en que uno se mueve y objetivos planteados por el cliente, sean estos aumento de interacción con la marca,
+                                fidelidad a la misma, reposicionamiento de ella, aumento de leads. Para ello los ayudamos en todo el proceso o en la parte que sea necesaria para ustedes.
                             </p>
                         </Col>
                         <Col xs={12} lg={6} className="img-col order-2 order-lg-3">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Col, Row, Modal, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const styles = [
     {
@@ -11,6 +12,11 @@ const styles = [
         color: "#be9d94",
         width: 100,
         height: 100,
+    },
+    {
+        color: "#be9d94",
+        width: 35,
+        height: 35,
     },
 ];
 
@@ -25,6 +31,9 @@ const ChildModal = () => {
                 Enviar
             </button>
             <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" show={show} onHide={handleClose} centered>
+                <Modal.Header className="d-flex justify-content-end">
+                    <FontAwesomeIcon style={{ ...styles[2] }} icon={faTimes} onClick={handleClose} />
+                </Modal.Header>
                 <Modal.Body className="d-flex align-items-center flex-column">
                     <FontAwesomeIcon style={{ ...styles[1] }} icon={faCheckCircle} />
                     <h3 style={{ ...styles[0] }} className="mt-4 fw-bold">
@@ -50,6 +59,9 @@ const PacksModal = () => {
             </button>
 
             <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" show={show} onHide={handleClose} centered>
+                <Modal.Header className="d-flex justify-content-end">
+                    <FontAwesomeIcon style={{ ...styles[2] }} icon={faTimes} onClick={handleClose} />
+                </Modal.Header>
                 <Modal.Body>
                     <Container>
                         <Row>

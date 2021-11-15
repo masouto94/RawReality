@@ -14,7 +14,7 @@ const NavMenu = (props) => {
                 <Navbar.Brand href="#">{props.children}</Navbar.Brand>
                 <span className="fs-4 me-4">RawReality</span>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav">
-                    <FontAwesomeIcon className="icons w-100" icon={faBars} />
+                    <FontAwesomeIcon className="icons" icon={faBars} />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-end" style={{ width: "100%" }}>
