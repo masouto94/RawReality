@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { scroller } from "../../Utils/Functions";
+import PacksModal from "../../Utils/PacksModal";
 
 const LandingCard = () => {
     return (
@@ -13,7 +14,9 @@ const LandingCard = () => {
                     <button className={"landing-btn"} onClick={() => scroller("ServiceBar")}>
                         Ir a Servicios
                     </button>
-                    <button className={"landing-btn"}>Pedir un presupuesto</button>
+                    <button className={"landing-btn"} onClick={() => scroller("PacksContainer")}>
+                        Pedir un presupuesto
+                    </button>
                 </div>
             </Card>
         </>
